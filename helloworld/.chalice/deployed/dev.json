@@ -1,23 +1,5 @@
 {
-  "resources": [
-    {
-      "name": "default-role",
-      "resource_type": "iam_role",
-      "role_arn": "arn:aws:iam::515354867797:role/helloworld-dev",
-      "role_name": "helloworld-dev"
-    },
-    {
-      "name": "api_handler",
-      "resource_type": "lambda_function",
-      "lambda_arn": "arn:aws:lambda:us-west-2:515354867797:function:helloworld-dev"
-    },
-    {
-      "name": "rest_api",
-      "resource_type": "rest_api",
-      "rest_api_id": "057gn7ssl7",
-      "rest_api_url": "https://057gn7ssl7.execute-api.us-west-2.amazonaws.com/api/"
-    }
-  ],
+  "resources": [],
   "schema_version": "2.0",
   "backend": "api"
 }

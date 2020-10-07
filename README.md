@@ -105,6 +105,31 @@ def state_of_city(city):
     return {'state': CITIES_TO_STATE[city]}
 ```
 
+
+
+So far, our examples have only allowed GET requests. It’s actually possible to support additional HTTP methods. Here’s an example of a view function that supports PUT:
+
+```python
+@app.route('/resource/{value}', methods=['PUT'])
+def put_test(value):
+    return {"value": value}
+```
+
+We can test this method using the `http` command.  Note the examples below use the `http` command from the `httpie` package. You can install this using `pip install httpie`:
+
+```
+$ http PUT https://endpoint/api/resource/foo
+HTTP/1.1 200 OK
+
+{
+    "value": "foo"
+}
+```
+
+
+
+
+
 ### References:
 
 * https://github.com/aws/chalice

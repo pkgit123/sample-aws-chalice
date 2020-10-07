@@ -23,6 +23,15 @@ def state_of_city(city):
 		raise BadRequestError("Unknown city '%s', valid choices are: %s " % (city, ', '.join(CITIES_TO_STATE.keys()) ) )
 
 
+@app.route('/resource/{value}', methods=['PUT'])
+def put_test(value):
+    return {"value": value}
+
+
+@app.route('/myview', methods=['POST', 'PUT'])
+def myview():
+    pass
+
 # The view function above will return {"hello": "world"}
 # whenever you make an HTTP GET request to '/'.
 #
