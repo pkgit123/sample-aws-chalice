@@ -1,3 +1,18 @@
+# aws chalice
+sample/
+.cache
+venv
+docs/build/
+.idea
+__pycache__/
+.coverage
+chalice.egg-info/
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+*.pyc
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
