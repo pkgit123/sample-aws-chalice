@@ -1,7 +1,7 @@
 # aws chalice
 sample/
 .cache
-venv*/
+venv37/
 docs/build/
 .idea
 __pycache__/
